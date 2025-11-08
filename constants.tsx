@@ -1,6 +1,13 @@
 import React from 'react';
 import type { ArtPiece, ProfileData } from './types';
 
+import Gundam from './img/Gundam.png';
+import OptimusPrime from './img/OptimusPrime.png';
+import SpaceMarine from './img/SpaceMarine.png';
+import Duck from './img/Duck.png';
+import Fruit from './img/Fruit.png';
+import Catto from './img/Catto.gif';
+
 const GithubIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
 );
@@ -19,7 +26,7 @@ export const PROFILE_DATA: ProfileData = {
   avatarUrl: "https://picsum.photos/seed/alex-doe/200/200",
   socials: [
     { name: "GitHub", url: "https://github.com/Aegis-plus/", icon: <GithubIcon /> },
-    { name: "Email", url: "mailto:hello@aegis.plus", icon: <EmailIcon /> },
+    { name: "Email", url: "mailto:mail@aegis.zone.id", icon: <EmailIcon /> },
     { name: "Steam", url: "#", icon: <span className="font-semibold text-lg">Steam</span> },
   ],
 };
@@ -27,38 +34,38 @@ export const PROFILE_DATA: ProfileData = {
 export const ART_GALLERY: ArtPiece[] = [
   {
     id: 1,
-    src: "https://picsum.photos/seed/art1/600/800",
-    title: "Celestial Wanderer",
-    description: "A digital painting exploring the lonely journey of a comet through the cosmos, representing solitude and purpose.",
+    src: Gundam,
+    title: "Gundam",
+    description: "A detailed model of a Gundam mecha, showcasing precision engineering and iconic design.",
   },
   {
     id: 2,
-    src: "https://picsum.photos/seed/art2/800/600",
-    title: "Neon Depths",
-    description: "An abstract piece capturing the vibrant energy of a futuristic cityscape reflected in the deep ocean.",
+    src: OptimusPrime,
+    title: "Optimus Prime",
+    description: "The legendary leader of the Autobots, a symbol of heroism and leadership.",
   },
   {
     id: 3,
-    src: "https://picsum.photos/seed/art3/600/600",
-    title: "Quantum Bloom",
-    description: "A representation of growth and complexity, where geometric patterns bloom into organic forms.",
+    src: SpaceMarine,
+    title: "Space Marine",
+    description: "A fierce warrior from the Warhammer 40K universe, representing strength and honor.",
   },
   {
     id: 4,
-    src: "https://picsum.photos/seed/art4/800/600",
-    title: "Forgotten Relic",
-    description: "An ancient artifact from a forgotten civilization, half-swallowed by nature, symbolizing the passage of time.",
+    src: Duck,
+    title: "Duck",
+    description: "A charming duck figurine, bringing a touch of whimsy and playfulness.",
   },
   {
     id: 5,
-    src: "https://picsum.photos/seed/art5/600/800",
-    title: "Echoes in the Void",
-    description: "Sound waves visualized as light, traveling through an endless void. A study in sensory translation.",
+    src: Fruit,
+    title: "Fruit",
+    description: "A delightful fruit arrangement, celebrating color and natural beauty.",
   },
   {
     id: 6,
-    src: "https://picsum.photos/seed/art6/600/600",
-    title: "Symbiotic City",
-    description: "A metropolis where architecture and nature are not just coexisting, but are fully integrated and symbiotic.",
+    src: Catto,
+    title: "Catto",
+    description: "An adorable animated cat, bringing joy and cuteness to the gallery.",
   },
 ];
