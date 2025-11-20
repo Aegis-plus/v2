@@ -22,9 +22,12 @@
       "@/*": [
         "./*"
       ]
-    },
-    "allowImportingTsExtensions": true,
-    "noEmit": true
+    }
   },
-  "include": ["**/*.ts", "**/*.tsx", "images.d.ts"]
+  "files": [
+    "./index.tsx"
+  ],
+  "angularCompilerOptions": {
+    "disableTypeScriptVersionCheck": true
+  }
 }
