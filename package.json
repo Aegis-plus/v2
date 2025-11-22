@@ -7,7 +7,7 @@
     "dev": "ng serve",
     "build": "ng build",
     "preview": "ng serve --configuration=production",
-    "deploy": "ng build --base-href / && npx ngh --dir=dist/browser"
+    "deploy": "ng build && npx ngh --dir=dist/browser"
   },
   "dependencies": {
     "@angular/build": "^21.0.0",
